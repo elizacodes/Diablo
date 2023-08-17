@@ -102,7 +102,7 @@ def ask_again(characters): # figure out how to append to the original dictionary
     if user_prompt == "YES" or "Y":
         update = character_class(classes)
         # return update
-    elif user_prompt == "NO" or "Y":
+    elif user_prompt == "NO" or "N":
         print("Have fun gaming.")
     else:
         update = characters.append(user_prompt)
