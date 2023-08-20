@@ -75,8 +75,10 @@ def character_class(classes):
     while True:
         if character_lvl < 0:
             print("You must enter a level higher than 0.")
-        else:
-            break
+            break # local variable issue
+    # while character_lvl < 0:
+    #     print("You must enter a level higher than 0.")
+    #     if character_lvl > 0:
             
     return class_choice, character_lvl, name
 
