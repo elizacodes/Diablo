@@ -21,6 +21,26 @@ def read_file():
         for col in diablo_data.iter_cols(1, diablo_data.max_column):
             print(col[row].value)
 
+# --- Idea: Have the user enter values for their inputs
+# and run a while loop, with condition statements to meet the requirements
+# since the user has to enter at least one value.
+
+class Diablo:
+    def __init__(self, char_class, level, gender):
+        characters = []
+        
+        self.char_class = input("What is your class? \n").capitalize().strip()
+        self.level = int(input("What is the level of this character? \n"))
+        while True:
+            if level < 0:
+                if len(characters) == 0:
+                    print("You must enter one value.")
+                else:
+                    break
+            else:
+                characters.append(level)
+        self.gender = input("Enter the character's gender: \n").capitalize().strip()
+
 # -------------------------
 # ---- "FINISHED WORK" ----
 # -------------------------
